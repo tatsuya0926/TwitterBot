@@ -3,7 +3,7 @@
 import datetime
 import twitter_util
 
-TWEET_FILE_NAME = "/Users/miyata-pc/Desktop/MyPython/tweet/week_tweets.txt"
+TWEET_FILE_NAME = "/Users/miyata-pc/Twitter_project/week_tweets.txt"
 SPLITTER = "[--split--]"
 
 def main():

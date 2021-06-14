@@ -2,7 +2,7 @@
 
 import twitter_util
 
-TWEET_FILE_NAME = "/Users/miyata-pc/Desktop/MyPython/tweet/text_tweet.txt"
+TWEET_FILE_NAME = "/Users/miyata-pc/Twitter_project/text_tweet.txt"
 
 def main():
   with open(TWEET_FILE_NAME, "r", encoding="utf_8") as f:
