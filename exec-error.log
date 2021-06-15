@@ -2,6 +2,3 @@ Now:QUERY-->>#Python
 Now:QUERY-->>#駆け出しエンジニアと繋がりたい
 Now:QUERY-->>#プログラミング
 Now:QUERY-->>#今日の積み上げ
-ter_project/tweet_week.py", line 10, in main
-    with open(TWEET_FILE_NAME, "r", encoding="utf_8") as f: # tweet内容が含まれたtextファイル読み込み
-FileNotFoundError: [Errno 2] No such file or directory: '/Users/miyata-pc/Desktop/MyPython/tweet/week_tweets.txt'
