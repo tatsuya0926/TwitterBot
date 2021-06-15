@@ -2,7 +2,11 @@ import tweepy
 import twitter_util
 
 def main():
-    api=tweepy.API(twitter_util.auth) #キーの取得
+  
+    auth=tweepy.OAuthHandler(twitter_util.CONSUMER_KEY,twitter_util.CONSUMER_SECRET)
+    auth.set_access_token(twitter_util.ACCESS_TOKEN,twitter_util.ACCESS_SECERET)
+    api=tweepy.API(auth)
+
 
     q_list=["#Python","#駆け出しエンジニアと繋がりたい","#プログラミング","#今日の積み上げ"]
     count=10
