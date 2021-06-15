@@ -12,11 +12,7 @@
 git clone "URL"
 ```
 
-### Step 2. Set up environment variables
-
-```bash
-Twitterからキーの取得
-```
+### Step 2. Twitterからキーの取得
 
 - consumer_key = "xxxx"
 - consumer_secret = "xxxx"
