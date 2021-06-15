@@ -14,9 +14,9 @@ git clone "URL"
 
 ### Step 2. Twitterからキーの取得
 
-- consumer_key = "xxxx"
-- consumer_secret = "xxxx"
-- token = "xxxx"
-- token_secret = "xxxx"
+- CONSUMER_KEY = "xxxx"
+- CONSUMER_SECRET = "xxxx"
+- ACCESS_TOKEN = "xxxx"
+- ACCESS_SECERET = "xxxx"
 
 ### Step 3. 自動化
