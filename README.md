@@ -66,7 +66,7 @@ PATH=***
 
 #(分) (時) (日) (月) (曜日)  (実行するコマンド)
 
-* * * * * (実行するコマンド) > /Users/****-pc/Desktop/exec-error.log 2>&1 (エラーがあった際、それを表示)
+* * * * * (実行するコマンド) > /Users/****-pc/Twitter_project/exec-error.log 2>&1 (エラーがあった際、それを表示)
 
 esc
 
