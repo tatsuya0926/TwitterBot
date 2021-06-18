@@ -28,8 +28,9 @@ def main():
         tweet_text = contents[week_num].strip() # tweetファイルの中身から曜日番号に対応する内容を取得
         #print(tweet_text)
 
-        # t = twitter_util.TwitterUtil()
         post(tweet_text) # 投稿
+        # t = twitter_util.TwitterUtil()
+        # t.post(tweet_text) # 投稿
 
 if __name__ == '__main__':
     main()
