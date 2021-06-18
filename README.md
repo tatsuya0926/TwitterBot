@@ -32,6 +32,11 @@ PATH=XXXX
 0 */1 * * * python /Users/****-pc/Twitter_project/twitter_autoFavorite.py > /Users/****-pc/Twitter_project/exec-error.log 2>&1
 ```
 3.PATHと実行内容（上記参照）を入力した後、escキーを入力。:wqを押し、そしてreturnで上書き保存
+```
+:wq
+```
+
+# croncode
 
 ・現在実行されているcronのリスト確認
 ```
