@@ -1,10 +1,18 @@
 #coding: UTF-8
 
+import tweepy
 import datetime
 import twitter_util
 
 TWEET_FILE_NAME = "/Users/miyata-pc/Twitter_project/week_tweets.txt"
 SPLITTER = "[--split--]"
+
+def post(text):
+    auth = tweepy.OAuthHandler(twitter_util.CONSUMER_KEY, twitter_util.CONSUMER_SECRET)
+    auth.set_access_token(twitter_util.ACCESS_TOKEN, twitter_util.ACCESS_SECERET)
+    api = tweepy.API(auth)
+
+    api.update_status(status=text)
 
 def main():
     with open(TWEET_FILE_NAME, "r", encoding="utf_8") as f: # tweet内容が含まれたtextファイル読み込み
@@ -20,8 +28,8 @@ def main():
         tweet_text = contents[week_num].strip() # tweetファイルの中身から曜日番号に対応する内容を取得
         #print(tweet_text)
 
-        t = twitter_util.TwitterUtil() # 投稿
-        t.post(tweet_text)
+        # t = twitter_util.TwitterUtil()
+        post(tweet_text) # 投稿
 
 if __name__ == '__main__':
     main()
