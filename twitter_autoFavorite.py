@@ -8,7 +8,7 @@ def main():
     api=tweepy.API(auth)
 
 
-    q_list=["#Python","#駆け出しエンジニアと繋がりたい","#プログラミング","#今日の積み上げ"]
+    q_list=["#プログラミング初心者","#駆け出しエンジニアと繋がりたい","#プログラミング","#今日の積み上げ"]
     count=10
     for q in q_list:
         print("Now:QUERY-->>{}".format(q))
