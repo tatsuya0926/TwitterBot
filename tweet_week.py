@@ -4,12 +4,12 @@ import tweepy
 import datetime
 import twitter_util
 
-TWEET_FILE_NAME = "/Users/miyata-pc/Twitter_project/week_tweets.txt"
+TWEET_FILE_NAME = "week_tweets.txt"
 SPLITTER = "[--split--]"
 
 def post(text):
     auth = tweepy.OAuthHandler(twitter_util.CONSUMER_KEY, twitter_util.CONSUMER_SECRET)
-    auth.set_access_token(twitter_util.ACCESS_TOKEN, twitter_util.ACCESS_SECERET)
+    auth.set_access_token(twitter_util.ACCESS_TOKEN, twitter_util.ACCESS_SECRET)
     api = tweepy.API(auth)
 
     api.update_status(status=text)
