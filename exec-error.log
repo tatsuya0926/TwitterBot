@@ -1,4 +1,6 @@
-Now:QUERY-->>#Python
-Now:QUERY-->>#駆け出しエンジニアと繋がりたい
-Now:QUERY-->>#プログラミング
-Now:QUERY-->>#今日の積み上げ
+Traceback (most recent call last):
+  File "/Users/miyata-pc/Twitter_project/twitter_autoFavorite.py", line 24, in <module>
+    main()
+  File "/Users/miyata-pc/Twitter_project/twitter_autoFavorite.py", line 7, in main
+    auth.set_access_token(twitter_util.ACCESS_TOKEN,twitter_util.ACCESS_SECRET)
+AttributeError: module 'twitter_util' has no attribute 'ACCESS_SECRET'
