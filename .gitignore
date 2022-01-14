@@ -10,3 +10,6 @@ __pycache__
 
 #テスト用に作ったpyファイル
 twitter_post_sample.py
+
+#仮想環境
+.venv
