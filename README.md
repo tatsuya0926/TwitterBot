@@ -52,10 +52,14 @@ echo $PATH
 
 ## croncode
 
-| crontab -l | 現在実行されているcronのリスト確認 |
-| crontab -r | cron内の情報すべて削除             |
-| :q!        | 保存せずにvimを抜ける              |
-| #          | 一番前に#でコメントアウト          |
+
+| **CronCode**       | details                            |
+| ------------------ | ---------------------------------- |
+| crontab -l         | 現在実行されているcronのリスト確認 |
+| crontab -e         | crontabを開く                      |
+| crontab -r         | cron内の情報すべて削除             |
+| :q!                | 保存せずにvimを抜ける              |
+| #                  | 一番前に#でコメントアウト          |
 
 ## 実行順序
 
