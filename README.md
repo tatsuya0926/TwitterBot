@@ -1,12 +1,11 @@
-# Twitter_project
-
-自動tweet:tweet_week.py
-
+# Twitter_Bot
+概要:
+TwitterAPIを用いた自動ツイートおよび自動いいねのソースコード、cronやAutomoterなどを用いて自動化する</br>
+2023年2月13日現在TwitterAPIが有料化するとのことで、アクセストークンなどのキー取得について変わるかもしれませんがご了承ください </br>
+自動tweet:tweet_week.py </br>
 自動いいね:twitter_autoFavorite.py
 
 # セットアップ
-
-
 ### Step 1. レポジトリをclone
 ```
 git clone "URL"

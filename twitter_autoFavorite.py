@@ -6,6 +6,7 @@ logging.basicConfig(filename='exec-error.log', level=logging.ERROR, encoding='ut
 
 def main():
     try:
+        logging.info("処理開始")
         auth=tweepy.OAuthHandler(twitter_util.CONSUMER_KEY,twitter_util.CONSUMER_SECRET)
         auth.set_access_token(twitter_util.ACCESS_TOKEN,twitter_util.ACCESS_SECRET)
         api=tweepy.API(auth)
@@ -18,9 +19,8 @@ def main():
             for status in search_results:
                 try:
                     api.create_favorite(status.id) #ファボ
-                except:
-                    pass
-
+                except Exception as e:
+                    logging.error("ファボに失敗しました。")
     except Exception as e:
         logging.error("予期せぬエラーが発生しました")
         logging.error(e)
