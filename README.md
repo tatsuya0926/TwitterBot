@@ -1,18 +1,18 @@
 # Twitter_Bot
 概要:
-TwitterAPIを用いた自動ツイートおよび自動いいねのソースコード、cronやAutomoterなどを用いて自動化する</br>
-2023年2月13日現在TwitterAPIが有料化するとのことで、アクセストークンなどのキー取得について変わるかもしれませんがご了承ください </br>
+TwitterAPIを用いた自動ツイートおよび自動いいねのソースコード、自動化ツールを用いて自動化する. </br>
+2023年2月13日現在TwitterAPIが有料化するとのことで運用を中止. </br>
 自動tweet:tweet_week.py </br>
 自動いいね:twitter_autoFavorite.py
 
-# セットアップ
-### Step 1. レポジトリをclone
+# Set up
+### Step 1. clone
 ```
 git clone "URL"
 ```
 ### Step 2. Twitterからキーの取得
 
-Twitter Developerからconsumer_keyやaccess_token等を取得し、twitter_util.pyに以下の内容を記載してください。
+Twitter Developerからconsumer_keyやaccess_token等を取得し、twitter_util.pyに以下の内容を記載.
 
 - CONSUMER_KEY = "xxxx"
 - CONSUMER_SECRET = "xxxx"
@@ -21,33 +21,28 @@ Twitter Developerからconsumer_keyやaccess_token等を取得し、twitter_util
 
 ### Step 3. 自動化
 
-今回はMac user向けにcron(MacOS)で自動化します。（Windowsならタイムスケジューラーで）
+cron(MacOS)で自動化.（Windowsならタイムスケジューラーで）
 
 1.crontab -eで、crontabを開き、iキーを入力
 
-入力可能になるので以下を入力。
+入力可能になるので以下を入力.
 ```
 crontab -e
 ```
-2.実行するPythonのPATHと実行させたい日時と実行したいファイルを記述
+2.実行するPythonのPATHと実行させたい日時と実行したいファイルを記述.
 ```
 PATH=XXXX
 0 7 * * * python /Users/****/TwitterBot/tweet_week.py
 
 0 */1 * * * python /Users/****/TwitterBot/twitter_autoFavorite.py
 ```
-PATHは
-```
-echo $PATH
-```
-で取得できます
 
-3.PATHと実行内容（上記参照）を入力した後、escキーを入力。:wqを押し、そしてreturnで上書き保存
+3.PATHと実行内容（上記参照）を入力した後, escキーを入力. :wqを押し, そしてreturnで上書き保存.
 ```
 :wq
 ```
 
-# 付録
+# Appendix
 
 ## croncode
 
@@ -60,24 +55,3 @@ echo $PATH
 | :q!                | 保存せずにvimを抜ける              |
 | #                  | 一番前に#でコメントアウト          |
 
-## 実行順序
-
-export EDITOR=vim
-
-echo $PATH
-
-crontab -e
-
-i
-
-PATH=***
-
-#(分) (時) (日) (月) (曜日)  (実行するコマンド)
-
-* * * * * (実行するソースコード) (エラーがあった際、それを表示)
-
-esc
-
-:wq
-
-return
